@@ -1,11 +1,14 @@
 const functions = require('firebase-functions');
+// import 'firebase-functions'
 
 const fbConfig = {
   projectId: "your-firebase-project-id",
   keyfileName: 'keyfile.json'
 };
 
-const vision = require('@google-cloud/vision')(fbConfig);
+const cloud_vision = require('@google-cloud/vision')
+
+let vision = new test(cloud_vision);
 
 const admin = require("firebase-admin");
 const serviceAccount = require("./keyfile.json");
